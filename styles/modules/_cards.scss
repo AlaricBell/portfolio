@@ -1,0 +1,18 @@
+.card {
+  height: 100%;
+  width: 100%;
+
+  &-transparent {
+    @include flexy($dir: column, $just: flex-start, $align: flex-start);
+    padding-bottom: 85px;
+    text-align: left;
+    background: transparent;
+  }
+
+  &-button {
+    @include flexy($dir: column, $just: flex-start, $align: flex-end);
+    padding-bottom: 85px;
+    text-align: right;
+    background: transparent;
+  }
+}

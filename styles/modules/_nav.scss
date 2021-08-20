@@ -1,0 +1,136 @@
+.navbar {
+  &-initial {
+    @include flexy($dir: row, $just: space-between, $align: center);
+    height: 85px;
+    width: 100%;
+    padding: 0.75rem 1.45rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    margin-bottom: 2.25rem;
+    background: transparent;
+
+    .brand {
+      @include flexy($dir: column, $just: center, $align: flex-start);
+    }
+  }
+
+  #collapse {
+    display: block;
+    position: relative;
+    width: 24px;
+    height: 4px;
+    background: $color-light;
+
+    &::after {
+      display: block;
+      content: "";
+      width: 24px;
+      height: 4px;
+      background: $color-light;
+      position: absolute;
+      top: 8px;
+      left: 0;
+    }
+
+    &::before {
+      display: block;
+      content: "";
+      width: 24px;
+      height: 4px;
+      background: $color-light;
+      position: absolute;
+      top: -8px;
+      left: 0;
+    }
+
+    &.collapsed {
+      visibility: hidden;
+
+      &::after {
+        display: block;
+        content: "";
+        width: 24px;
+        height: 4px;
+        background: $color-light;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: transform 0.2s ease-in-out;
+        transform: rotate(45deg);
+        visibility: visible;
+      }
+
+      &::before {
+        display: block;
+        content: "";
+        width: 24px;
+        height: 4px;
+        background: $color-light;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: transform 0.2s ease-in-out;
+        transform: rotate(-45deg);
+        visibility: visible;
+      }
+    }
+  }
+
+  .nav {
+    &-items {
+      @include flexy($dir: column, $just: flex-start, $align: flex-start);
+      width: 100%;
+    }
+
+    &-item {
+      font-size: 16px;
+      font-weight: weight(bold);
+      text-transform: uppercase;
+      width: 100%;
+
+      a {
+        display: inline-block;
+        padding: 1.25rem;
+        width: 100%;
+      }
+
+      &:hover {
+        background: linear-gradient(
+          130deg,
+          $color-dark,
+          $color-light 41.07%,
+          $color-dark 98.05%
+        );
+      }
+    }
+
+    @include mq(lg) {
+      &-item {
+        font-size: 24px;
+      }
+    }
+
+    &-dropdown {
+      @include flexy($dir: column, $just: flex-start, $align: flex-start);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      height: 100vh;
+      padding-top: 85px;
+      width: 100%;
+      background: $color-dark;
+
+      transition: transform 0.5s ease-in-out;
+      transform: translateX(-100%);
+    }
+
+    &-collapsed {
+      transition: transform 0.5s ease-in-out;
+      transform: translateX(0);
+      top: 0;
+    }
+  }
+}

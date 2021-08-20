@@ -1,0 +1,84 @@
+.container,
+.container-fluid,
+.container-skew {
+  width: 100%;
+  margin: 0;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.container {
+  max-width: 90vw;
+  margin: 0 auto;
+
+  &-card {
+    &-push {
+      margin-bottom: 8px;
+      z-index: 10;
+      height: 240px;
+
+      @include mq(md) {
+        & {
+          margin-top: -185px;
+        }
+      }
+
+      @include mq(md) {
+        &:nth-of-type(2) {
+          margin-top: -225px;
+        }
+      }
+    }
+  }
+
+  &-skew {
+    position: relative;
+    padding-top: 85px;
+    padding-bottom: 85px;
+
+    &-light {
+      &:after {
+        @extend %skew;
+        background: $color-light;
+      }
+    }
+
+    &-neon {
+      &:after {
+        @extend %skew;
+        background: $color-primary;
+      }
+    }
+
+    &-dark {
+      &:after {
+        @extend %skew;
+        background: $color-dark;
+      }
+    }
+  }
+}
+
+@include mq(sm) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@include mq(md) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@include mq(lg) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@include mq(xl) {
+  .container {
+    max-width: 1140px;
+  }
+}

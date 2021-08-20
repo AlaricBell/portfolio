@@ -1,0 +1,66 @@
+.text {
+  &-title {
+    @include flexy($dir: row, $just: flex-start, $align: center);
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: weight(ultra);
+
+    &-neon {
+      color: $color-primary;
+    }
+    &-dark {
+      color: $color-dark;
+    }
+    &-light {
+      color: $color-light;
+    }
+  }
+
+  &-primary {
+    @include flexy($dir: row, $just: flex-start, $align: center);
+    font-size: 18px;
+    font-weight: weight(bold);
+
+    &-semi-dark {
+      color: $color-semi-dark;
+    }
+    &-semi-light {
+      color: $color-semi-light;
+    }
+    &-dark {
+      color: $color-dark;
+    }
+    &-light {
+      color: $color-light;
+    }
+  }
+
+  &-secondary {
+    @include flexy($dir: row, $just: flex-start, $align: center);
+    font-size: 14px;
+    font-weight: weight(normal);
+
+    &-semi-dark {
+      color: $color-semi-dark;
+    }
+    &-semi-light {
+      color: $color-semi-light;
+    }
+    &-dark {
+      color: $color-dark;
+    }
+    &-light {
+      color: $color-light;
+    }
+  }
+}
+
+.line {
+  &-separator {
+    width: 40%;
+    height: 2px;
+    border: none;
+    outline: none;
+    background-color: $color-primary;
+  }
+}

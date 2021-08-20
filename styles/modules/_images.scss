@@ -1,0 +1,12 @@
+.img {
+  &-pc {
+    display: none;
+    width: 30%;
+  }
+
+  @include mq(md) {
+    &-pc {
+      display: block;
+    }
+  }
+}

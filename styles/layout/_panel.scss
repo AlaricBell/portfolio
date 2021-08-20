@@ -1,0 +1,11 @@
+#welcome {
+  @include flexy($dir: row, $just: center, $align: flex-end);
+  background-image: url("/img/bg-developer.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  height: 100vh;
+  width: 100%;
+  padding: 2.75rem;
+}

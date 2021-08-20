@@ -1,0 +1,22 @@
+$color-primary: #f29f05;
+$color-light: #fff;
+$color-semi-light: rgba(#fff, 0.6);
+$color-dark: #0d0d0d;
+$color-semi-dark: rgba(#0d0d0d, 0.6);
+
+$breakpoints: (
+  "xs": 0,
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+  "xxl": 1400px,
+);
+
+$weights: (
+  "thin": 100,
+  "light": 300,
+  "normal": 400,
+  "bold": 600,
+  "ultra": 800,
+);
