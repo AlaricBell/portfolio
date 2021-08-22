@@ -9,3 +9,17 @@
   width: 100%;
   padding: 2.75rem;
 }
+
+#introduction {
+  @include flexy($dir: column, $just: center, $align: flex-start);
+  padding-bottom: 85px;
+
+  .container {
+    transition: transform 0.8s ease-in-out;
+    transform: skewY(0);
+  }
+
+  .skewed {
+    transform: skewY(-2deg);
+  }
+}

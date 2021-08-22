@@ -1,0 +1,9 @@
+.animated {
+  transition: transform 0.4s ease-in-out;
+  &-up {
+    transform: skewY(-2deg);
+  }
+  &-down {
+    transform: skewY(2deg);
+  }
+}

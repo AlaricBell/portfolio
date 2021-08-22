@@ -1,4 +1,4 @@
-#cursor {
+#cursor-inner {
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -7,16 +7,70 @@
   background: lighten($color-dark, 12%);
   transform: translate(-50%, -50%);
   pointer-events: none;
+  transition: width 0.1s linear, height 0.1s linear,
+    background-color 0.1s linear, opacity 0.1s linear;
+
+  &.mouseDown {
+    background: $color-light;
+    width: 30px;
+    height: 30px;
+    opacity: 0.3;
+  }
 }
 
-#cursor-circle {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
+#cursor-outer {
+  @include flexy($just: center, $align: center);
+  width: 40px;
+  height: 40px;
+  border: 1px solid $color-semi-light;
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
   position: fixed;
   z-index: 10000;
-  background: rgba(lighten($color-dark, 12%), 0.6);
-  transition: 0.05s;
+  background: transparent;
   transform: translate(-50%, -50%);
   pointer-events: none;
+  animation: wave 3s linear infinite;
+  transition: width 0.1s linear, height 0.1s linear, border-radius 0.1s linear,
+    opacity 0.1s linear, border-color 0.1s linear;
+
+  &.mouseDown {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    opacity: 0.3;
+    border-color: rgba($color-light, 0.3);
+  }
+}
+
+#cursor-outer2 {
+  @include flexy($just: center, $align: center);
+  width: 40px;
+  height: 40px;
+  border: 1px solid $color-semi-light;
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  position: fixed;
+  z-index: 10000;
+  background: transparent;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  animation: wave 5s linear infinite;
+  transition: width 0.1s linear, height 0.1s linear, border-radius 0.1s linear,
+    opacity 0.1s linear, border-color 0.1s linear;
+
+  &.mouseDown {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    opacity: 0.3;
+    border-color: rgba($color-light, 0.3);
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }

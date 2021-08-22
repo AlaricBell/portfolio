@@ -15,4 +15,18 @@
     text-align: right;
     background: transparent;
   }
+
+  &-text {
+    margin-top: 3.75rem;
+
+    &-right {
+      margin-left: auto;
+      width: 70%;
+    }
+
+    &-left {
+      margin-right: auto;
+      width: 70%;
+    }
+  }
 }

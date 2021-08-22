@@ -14,7 +14,9 @@ const Navbar: React.FC = props => {
           <TextSecondarySemiLight>Full-Stack Developer</TextSecondarySemiLight>
         </div>
         </a>
-        <div id="collapse" className={isVisible ? "collapsed" : ""} onClick={() => setIsVisible(!isVisible)}></div>
+        <div className="icon-container" onClick={() => setIsVisible(!isVisible)}>
+          <div id="icon-collapse" className={isVisible ? "collapsed" : ""} ></div>
+        </div>
       </div>
 
 

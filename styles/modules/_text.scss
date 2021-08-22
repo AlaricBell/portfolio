@@ -1,12 +1,22 @@
 .text {
+  &-ultra {
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: weight(ultra);
+    color: $color-light;
+  }
+
   &-title {
     @include flexy($dir: row, $just: flex-start, $align: center);
     text-transform: uppercase;
     font-size: 24px;
     font-weight: weight(ultra);
 
-    &-neon {
-      color: $color-primary;
+    &-semi-dark {
+      color: $color-semi-dark;
+    }
+    &-semi-light {
+      color: $color-semi-light;
     }
     &-dark {
       color: $color-dark;
@@ -53,6 +63,50 @@
       color: $color-light;
     }
   }
+
+  &-animation {
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: weight(ultra);
+    color: $color-semi-light;
+    position: relative;
+    white-space: pre;
+
+    &:before {
+      content: attr(data-text);
+      background-color: $color-light;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      white-space: nowrap;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      transition: 0.8s;
+      overflow: hidden;
+      white-space: pre;
+    }
+
+    &:hover:before {
+      width: 100%;
+    }
+  }
+
+  &-center {
+    @include flexy($dir: row, $wrap: wrap, $just: center, $align: center);
+    text-align: center;
+  }
+
+  &-left {
+    @include flexy($dir: row, $wrap: wrap, $just: flex-start, $align: center);
+    text-align: left;
+  }
+
+  &-right {
+    @include flexy($dir: row, $wrap: wrap, $just: flex-end, $align: center);
+    text-align: right;
+  }
 }
 
 .line {
@@ -63,4 +117,8 @@
     outline: none;
     background-color: $color-primary;
   }
+}
+
+.text-animation-container {
+  @include flexy($dir: row, $wrap: wrap, $just: flex-start, $align: center);
 }

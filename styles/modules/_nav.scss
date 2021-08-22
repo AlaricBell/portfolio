@@ -16,68 +16,6 @@
     }
   }
 
-  #collapse {
-    display: block;
-    position: relative;
-    width: 24px;
-    height: 4px;
-    background: $color-light;
-
-    &::after {
-      display: block;
-      content: "";
-      width: 24px;
-      height: 4px;
-      background: $color-light;
-      position: absolute;
-      top: 8px;
-      left: 0;
-    }
-
-    &::before {
-      display: block;
-      content: "";
-      width: 24px;
-      height: 4px;
-      background: $color-light;
-      position: absolute;
-      top: -8px;
-      left: 0;
-    }
-
-    &.collapsed {
-      visibility: hidden;
-
-      &::after {
-        display: block;
-        content: "";
-        width: 24px;
-        height: 4px;
-        background: $color-light;
-        position: absolute;
-        top: 0;
-        left: 0;
-        transition: transform 0.2s ease-in-out;
-        transform: rotate(45deg);
-        visibility: visible;
-      }
-
-      &::before {
-        display: block;
-        content: "";
-        width: 24px;
-        height: 4px;
-        background: $color-light;
-        position: absolute;
-        top: 0;
-        left: 0;
-        transition: transform 0.2s ease-in-out;
-        transform: rotate(-45deg);
-        visibility: visible;
-      }
-    }
-  }
-
   .nav {
     &-items {
       @include flexy($dir: column, $just: flex-start, $align: flex-start);
