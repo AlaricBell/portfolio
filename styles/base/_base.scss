@@ -2,7 +2,12 @@
 
 * {
   box-sizing: border-box;
-  cursor: none;
+}
+
+@include mq(lg) {
+  * {
+    cursor: none;
+  }
 }
 
 html {
@@ -25,8 +30,14 @@ body {
 
 main,
 header,
-footer {
+footer,
+section {
   width: 100%;
+}
+
+section {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
 }
 
 main {

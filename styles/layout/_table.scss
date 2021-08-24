@@ -1,0 +1,9 @@
+.table {
+  &-tool {
+    @include flexy($dir: row, $wrap: wrap, $just: center, $align: center);
+    width: 70%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

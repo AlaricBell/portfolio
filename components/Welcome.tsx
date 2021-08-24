@@ -21,7 +21,7 @@ const Welcome: React.FC = props => {
           </div>
 
           <div className="col-12 col-md-6">
-          <Parallax speed={3}>
+          <Parallax speed={5}>
             <div className="card card-button">
               <ButtonWithText 
               path="/files/david_molnar_cv.pdf"

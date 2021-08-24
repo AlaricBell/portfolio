@@ -74,3 +74,17 @@
     transform: translate(-50%, -50%) rotate(360deg);
   }
 }
+
+#cursor-inner,
+#cursor-outer,
+#cursor-outer2 {
+  display: none;
+}
+
+@include mq(lg) {
+  #cursor-inner,
+  #cursor-outer,
+  #cursor-outer2 {
+    display: block;
+  }
+}

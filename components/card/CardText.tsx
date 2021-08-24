@@ -10,7 +10,7 @@ const CardText: React.FC<{title: string,
                           isScrollingUp?: boolean, 
                           isScrollingDown?: boolean}> = ({title, miniTitle, content, align = "text-left", isScrollingUp = false, isScrollingDown = false}) => {
     return (
-    <div className={`card card-text card-${align}`}>
+    <div className={`card card-text card-${align}`} data-aos="fade-up">
       <TextAnimationUltra
           align={align} 
           isScrollingUp={isScrollingUp}

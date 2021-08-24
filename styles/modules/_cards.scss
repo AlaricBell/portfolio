@@ -3,17 +3,110 @@
   width: 100%;
 
   &-transparent {
-    @include flexy($dir: column, $just: flex-start, $align: flex-start);
-    padding-bottom: 85px;
+    @include flexy($dir: column, $just: center, $align: flex-start);
     text-align: left;
     background: transparent;
   }
 
+  @include mq(md) {
+    &-button {
+      @include flexy($dir: column, $just: flex-start, $align: flex-end);
+      padding-bottom: 85px;
+    }
+  }
+
   &-button {
-    @include flexy($dir: column, $just: flex-start, $align: flex-end);
-    padding-bottom: 85px;
     text-align: right;
     background: transparent;
+    display: none;
+  }
+
+  @include mq(md) {
+    &-button {
+      @include flexy($dir: column, $just: flex-start, $align: flex-end);
+      padding-bottom: 85px;
+    }
+  }
+
+  &-animation {
+    padding: 1.25rem;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+    background: $color-dark;
+    width: 252px;
+    height: 252px;
+    position: relative;
+  }
+
+  @include mq(sm) {
+    &-animation {
+      width: 540px;
+      height: 540px;
+    }
+  }
+
+  @include mq(md) {
+    &-animation {
+      width: 448px;
+      height: 448px;
+    }
+  }
+
+  &-title {
+    width: 50%;
+    height: auto;
+  }
+
+  &-curtain {
+    padding: 1.25rem;
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: red;
+
+    transition: opacity 0.2s ease-in-out;
+    opacity: 0;
+
+    h2 {
+      transition: all 0.2s 0.3s ease-in-out;
+      opacity: 0;
+      transform: translateY(100%);
+    }
+
+    p {
+      transition: all 0.2s 0.2s ease-in-out;
+      opacity: 0;
+      transform: translateY(100%);
+    }
+
+    a {
+      transition: all 0.2s 0.4s ease-in-out;
+      opacity: 0;
+      transform: translateY(100%);
+    }
+
+    &:hover {
+      opacity: 1;
+
+      h2 {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      p {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      a {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   }
 
   &-text {
@@ -28,5 +121,33 @@
       margin-right: auto;
       width: 70%;
     }
+  }
+
+  &-tool {
+    width: 102px;
+    height: auto;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  &-row {
+    @include flexy($dir: column, $just: flex-start, $align: center);
+    width: 100%;
+    color: $color-semi-light;
+
+    &-icon {
+      height: 42px;
+    }
+  }
+}
+
+@keyframes moveup {
+  0% {
+    transform: translateY(150%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }

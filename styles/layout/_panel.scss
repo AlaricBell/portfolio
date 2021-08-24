@@ -1,25 +1,26 @@
 #welcome {
-  @include flexy($dir: row, $just: center, $align: flex-end);
-  background-image: url("/img/bg-developer.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  @include flexy($dir: row, $just: center, $align: center);
+  background-color: $color-dark;
 
   height: 100vh;
   width: 100%;
   padding: 2.75rem;
 }
 
+@include mq(md) {
+  #welcome {
+    @include flexy($dir: row, $just: center, $align: flex-end);
+    background-image: url("/img/bg-developer.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
 #introduction {
-  @include flexy($dir: column, $just: center, $align: flex-start);
-  padding-bottom: 85px;
+  background: $color-dark;
+}
 
-  .container {
-    transition: transform 0.8s ease-in-out;
-    transform: skewY(0);
-  }
-
-  .skewed {
-    transform: skewY(-2deg);
-  }
+#projects {
+  background: $color-primary;
 }
