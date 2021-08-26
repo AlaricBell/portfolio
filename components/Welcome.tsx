@@ -18,7 +18,7 @@ const Welcome: React.FC = props => {
               <TextTitleLight>Full-stack web developer</TextTitleLight>
               <TextPrimarySemiLight>With over 4 years of coding expreience, I always pay attention to detail while focusing on clean, scalable and maintainable code.</TextPrimarySemiLight>
               <div className="card-mobile">
-                <TextSecondaryLight><a className="btn-mobile" href="#">Resume</a> | <a className="btn-mobile" href="#">Github</a> | <a className="btn-mobile" href="#">Upwork</a></TextSecondaryLight>
+                <TextSecondaryLight><a rel="noreferrer" className="btn-mobile" href="/files/david_molnar_cv.pdf" target="_blank">Resume</a> | <a rel="noreferrer" className="btn-mobile" href="https://github.com/AlaricBell" target="_blank">Github</a> | <a rel="noreferrer" className="btn-mobile" href="https://www.upwork.com/freelancers/~01214b59aff89c6e02" target="_blank">Upwork</a></TextSecondaryLight>
               </div>
             </div>
           </Parallax>

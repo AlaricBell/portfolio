@@ -19,16 +19,17 @@ const Footer: React.FC = props => {
                     <div className="footer-item">
                         <TextPrimaryLight>Availability</TextPrimaryLight>
                         <hr className="line-separator"/>
-                        <TextSecondarySemiLight>I'm always working on something but I gladly discuss new opportunities</TextSecondarySemiLight>
+                        <TextSecondarySemiLight>I&apos;m always working on something but I gladly discuss new opportunities</TextSecondarySemiLight>
                     </div>
 
                     <div className="footer-item">
                         <TextPrimaryLight>Follow me</TextPrimaryLight>
                         <hr className="line-separator"/>
                         <ul>
-                            <li><TextSecondarySemiLight>Upwork</TextSecondarySemiLight></li>
-                            <li><TextSecondarySemiLight>LinkedIn</TextSecondarySemiLight></li>
-                            <li><TextSecondarySemiLight>Twitter</TextSecondarySemiLight></li>
+                            <li><a rel="noreferrer" href="https://www.upwork.com/freelancers/~01214b59aff89c6e02" target="_blank"><TextSecondarySemiLight>Upwork</TextSecondarySemiLight></a></li>
+                            <li><a rel="noreferrer" href="https://www.linkedin.com/in/d%C3%A1vid-moln%C3%A1r-a4b8b01a0/" target="_blank"><TextSecondarySemiLight>LinkedIn</TextSecondarySemiLight></a></li>
+                            <li><a rel="noreferrer" href="https://github.com/AlaricBell" target="_blank"><TextSecondarySemiLight>Github</TextSecondarySemiLight></a></li>
+                            <li><a rel="noreferrer" href="https://twitter.com/AlaricBell" target="_blank"><TextSecondarySemiLight>Twitter</TextSecondarySemiLight></a></li>
                         </ul>
                     </div>
                 </div>

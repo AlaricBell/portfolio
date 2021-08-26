@@ -14,7 +14,7 @@ const Contact: React.FC<{isScrollingUp: boolean, isScrollingDown: boolean}> = ({
                 align="text-center" 
                 isScrollingUp={isScrollingUp ? true : false}
                 isScrollingDown={isScrollingDown ? true : false}>
-                  Let's work <WordAnimation word=" together"/>
+                  Let&apos;s work <WordAnimation word=" together"/>
               </TextAnimationUltra>
           </div>
         </div>
@@ -25,14 +25,14 @@ const Contact: React.FC<{isScrollingUp: boolean, isScrollingDown: boolean}> = ({
           <div className="col-6 card-contact" data-aos="fade-up">
             <div className="contact-item">
               <TextTitleLight>Upwork</TextTitleLight>
-              <ButtonText path="#">Contact me</ButtonText>
+              <ButtonText path="https://www.upwork.com/freelancers/~01214b59aff89c6e02">Contact me</ButtonText>
             </div>
           </div>
 
           <div className="col-6 card-contact" data-aos="fade-up">
             <div className="contact-item">
               <TextTitleLight>LinkedIn</TextTitleLight>
-              <ButtonText path="#">Contact me</ButtonText>
+              <ButtonText path="https://www.linkedin.com/in/d%C3%A1vid-moln%C3%A1r-a4b8b01a0/">Contact me</ButtonText>
             </div>
           </div>
         </div>

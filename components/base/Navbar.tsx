@@ -8,7 +8,7 @@ const Navbar: React.FC = props => {
   return (
     <nav className="navbar">
       <div className="navbar-initial">
-      <a href="/">
+      <a href="#">
         <div className="brand">
           <TextTitleLight>Molnar David</TextTitleLight>
           <TextSecondarySemiLight>Full-Stack Developer</TextSecondarySemiLight>

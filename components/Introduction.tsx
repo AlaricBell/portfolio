@@ -23,7 +23,7 @@ const Introduction: React.FC<{isScrollingUp: boolean, isScrollingDown: boolean}>
               miniTitle="What can you expect?"
               content="I specialize in creating responsive websites with various functionalities, while thinking of the long-term run, 
               test and maintainability. You need a complex project for an exsisting product, or just want something eye-catching for a new startup? 
-              Hit me up and let's create somethign outstanding!"
+              Hit me up and let's create something outstanding!"
               align="text-left" 
               isScrollingUp={isScrollingUp ? true : false}
               isScrollingDown={isScrollingDown ? true : false}/>
@@ -34,7 +34,7 @@ const Introduction: React.FC<{isScrollingUp: boolean, isScrollingDown: boolean}>
               title="Attitude"
               miniTitle="Experience working with me!"
               content="By choosing me, you are not choosing a big company with various different projects, you are choosing me and my complete attention. 
-              I am proud of my healthy relationship with my clients, you can expect regular meetings and updates."
+              I am proud of my healthy relationship with my clients, you can expect regular meetings and updates in order to create a product that is the closest to your expectations"
               align="text-right" 
               isScrollingUp={isScrollingUp ? true : false}
               isScrollingDown={isScrollingDown ? true : false}/>
