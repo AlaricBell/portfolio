@@ -1,0 +1,112 @@
+.input {
+  &-group {
+    @include flexy($dir: column, $just: center, $align: flex-start);
+    width: 45%;
+    margin-bottom: 0.75rem;
+    margin-top: 0.75rem;
+
+    &:nth-of-type(2n) {
+      margin-left: auto;
+    }
+
+    &:nth-of-type(1 + 2n) {
+      margin-right: auto;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      color: $color-light;
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+      background: transparent;
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      border-bottom: 2px solid $color-semi-light;
+      outline: none;
+      position: relative;
+      font-size: 12px;
+
+      &:hover,
+      &:focus,
+      &:active {
+        border-bottom: 2px solid $color-light;
+      }
+
+      &:autofill {
+        background-color: transparent;
+        border: none;
+        outline: none;
+      }
+    }
+
+    @include mq(md) {
+      input,
+      select,
+      textarea {
+        font-size: 16px;
+      }
+    }
+
+    label {
+      color: $color-semi-light;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    option {
+      background: $color-dark;
+      color: $color-light;
+      outline: none;
+      border: none;
+
+      &:hover {
+        box-shadow: 0 0 10px 100px #1882a8 inset;
+      }
+    }
+  }
+
+  &-textarea {
+    width: 100%;
+  }
+}
+
+.form {
+  &-contact {
+    @include flexy($dir: row, $wrap: wrap, $just: center, $align: center);
+    width: 100%;
+    height: auto;
+  }
+}
+
+::placeholder {
+  color: $color-light;
+  opacity: 1;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  width: 100% !important;
+  color: $color-light !important;
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+  background: transparent !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
+  border-bottom: 2px solid $color-semi-light !important;
+  outline: none !important;
+  position: relative !important;
+  font-size: 16px !important;
+}

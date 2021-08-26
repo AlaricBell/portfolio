@@ -1,5 +1,6 @@
 import ButtonPrimary from "./button/ButtonPrimary";
 import TextPrimarySemiLight from "./text/TextPrimarySemiLight";
+import TextSecondaryLight from "./text/TextSecondaryLight";
 import TextSecondarySemiLight from "./text/TextSecondarySemiLight";
 import TextTitleLight from "./text/TextTitleLight"
 import ButtonWithText from "./button/ButtonWithText";
@@ -16,6 +17,9 @@ const Welcome: React.FC = props => {
               <TextSecondarySemiLight>Molnar David</TextSecondarySemiLight>
               <TextTitleLight>Full-stack web developer</TextTitleLight>
               <TextPrimarySemiLight>With over 4 years of coding expreience, I always pay attention to detail while focusing on clean, scalable and maintainable code.</TextPrimarySemiLight>
+              <div className="card-mobile">
+                <TextSecondaryLight><a className="btn-mobile" href="#">Resume</a> | <a className="btn-mobile" href="#">Github</a> | <a className="btn-mobile" href="#">Upwork</a></TextSecondaryLight>
+              </div>
             </div>
           </Parallax>
           </div>
@@ -36,10 +40,10 @@ const Welcome: React.FC = props => {
               buttonContent="Github"/>
 
               <ButtonWithText 
-              path="https://www.linkedin.com/in/d%C3%A1vid-moln%C3%A1r-a4b8b01a0/"
+              path="https://www.upwork.com/freelancers/~01214b59aff89c6e02"
               download={false}
               textContent="You can find me on"
-              buttonContent="LinkedIn"/>
+              buttonContent="Upwork"/>
             </div>
           </Parallax>
           </div>

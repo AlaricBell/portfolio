@@ -12,18 +12,18 @@ const Introduction: React.FC<{isScrollingUp: boolean, isScrollingDown: boolean}>
                 align="text-center" 
                 isScrollingUp={isScrollingUp ? true : false}
                 isScrollingDown={isScrollingDown ? true : false}>
-                  Hi, my name is<WordAnimation word=" David. "/> I am a <WordAnimation word=" full-stack "/> 
-                  web developer from <WordAnimation word=" Hungary."/>
+                  Hi, my name is<WordAnimation word=" David"/>, I am a <WordAnimation word=" full-stack "/> 
+                  web developer from <WordAnimation word=" Hungary"/>
               </TextAnimationUltra>
             </div>
 
             <div className="col-12">
               <CardText
-              title="Let's work together!"
-              miniTitle="Let's work together!"
-              content="Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Assumenda earum omnis quidem animi vero deserunt repellendus blanditiis,
-              esse nulla, et, dolore ipsam quae magnam. Laborum fugit provident dolorum adipisci! Dolores!"
+              title="My work"
+              miniTitle="What can you expect?"
+              content="I specialize in creating responsive websites with various functionalities, while thinking of the long-term run, 
+              test and maintainability. You need a complex project for an exsisting product, or just want something eye-catching for a new startup? 
+              Hit me up and let's create somethign outstanding!"
               align="text-left" 
               isScrollingUp={isScrollingUp ? true : false}
               isScrollingDown={isScrollingDown ? true : false}/>
@@ -31,11 +31,10 @@ const Introduction: React.FC<{isScrollingUp: boolean, isScrollingDown: boolean}>
 
             <div className="col-12">
             <CardText
-              title="Let's work together!"
-              miniTitle="Let's work together!"
-              content="Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Assumenda earum omnis quidem animi vero deserunt repellendus blanditiis,
-              esse nulla, et, dolore ipsam quae magnam. Laborum fugit provident dolorum adipisci! Dolores!"
+              title="Attitude"
+              miniTitle="Experience working with me!"
+              content="By choosing me, you are not choosing a big company with various different projects, you are choosing me and my complete attention. 
+              I am proud of my healthy relationship with my clients, you can expect regular meetings and updates."
               align="text-right" 
               isScrollingUp={isScrollingUp ? true : false}
               isScrollingDown={isScrollingDown ? true : false}/>

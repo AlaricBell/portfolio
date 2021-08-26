@@ -23,16 +23,16 @@ const Navbar: React.FC = props => {
       <div id="nav-collapse" className={`nav-dropdown ${isVisible ? "nav-collapsed" : ""}`}>
         <ul className="nav-items">
           <li className="nav-item">
-            <a href="/">Home</a>
+            <a href="#" onClick={() => setIsVisible(!isVisible)}>Home</a>
           </li>
           <li className="nav-item">
-            <a href="/">About</a>
+            <a href="#introduction" onClick={() => setIsVisible(!isVisible)}>About</a>
           </li>
           <li className="nav-item">
-            <a href="/">Projects</a>
+            <a href="#projects" onClick={() => setIsVisible(!isVisible)}>Projects</a>
           </li>
           <li className="nav-item">
-            <a href="/">Contact</a>
+            <a href="#contact" onClick={() => setIsVisible(!isVisible)}>Contact</a>
           </li>
         </ul>
       </div>

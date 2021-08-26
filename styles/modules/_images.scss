@@ -1,12 +1,10 @@
 .img {
   &-pc {
-    display: none;
-    width: 30%;
-  }
-
-  @include mq(md) {
-    &-pc {
-      display: block;
-    }
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: transform 0.2s ease-in-out;
   }
 }

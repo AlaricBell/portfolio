@@ -6,6 +6,7 @@ import LayoutPrimary from '../components/layout/LayoutPrimary'
 import Projects from '../components/Projects'
 import Welcome from '../components/Welcome'
 import Tools from '../components/Tools'
+import Contact from '../components/Contact'
 
 const Home: NextPage = () => {
   const [isScrollingUp, setIsScrollingUp] = useState(false);
@@ -59,6 +60,9 @@ const Home: NextPage = () => {
         isScrollingUp={isScrollingUp}
         isScrollingDown={isScrollingDown}/>
         <Tools
+        isScrollingUp={isScrollingUp}
+        isScrollingDown={isScrollingDown}/>
+        <Contact
         isScrollingUp={isScrollingUp}
         isScrollingDown={isScrollingDown}/>
       </main>

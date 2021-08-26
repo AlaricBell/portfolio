@@ -9,7 +9,7 @@ import {
     faJs,
     faPython,
     faPhp,
-
+    faWordpress,
     faBootstrap,
     faSass,
     faDocker,
@@ -39,6 +39,10 @@ const TableTools: React.FC = () => {
 
       <CardTool title="Laravel">
         <FontAwesomeIcon icon={faLaravel} style={{width: '32px', height: '32px'}}/>
+      </CardTool>
+
+      <CardTool title="Wordpress">
+        <FontAwesomeIcon icon={faWordpress} style={{width: '32px', height: '32px'}}/>
       </CardTool>
 
       <CardTool title="JavaScript">

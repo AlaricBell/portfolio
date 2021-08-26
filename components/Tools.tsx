@@ -8,12 +8,12 @@ const Projects: React.FC<{isScrollingUp: boolean, isScrollingDown: boolean}> = (
     <section id="tools">
       <div className="container">
         <div className="row">
-          <div className="col-12">
+          <div className="col-12" data-aos="fade-up">
               <TextAnimationUltra
                 align="text-center" 
                 isScrollingUp={isScrollingUp ? true : false}
                 isScrollingDown={isScrollingDown ? true : false}>
-                  These are the <WordAnimation word=" technologies "/> I am working with.
+                  These are the <WordAnimation word=" technologies "/> I am working with
               </TextAnimationUltra>
           </div>
 

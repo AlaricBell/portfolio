@@ -1,7 +1,7 @@
 .text {
   &-ultra {
     text-transform: uppercase;
-    font-size: 36px;
+    font-size: 24px;
     font-weight: weight(ultra);
     color: $color-light;
   }
@@ -9,7 +9,7 @@
   &-title {
     @include flexy($dir: row, $just: flex-start, $align: center);
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: weight(ultra);
 
     &-semi-dark {
@@ -28,7 +28,7 @@
 
   &-primary {
     @include flexy($dir: row, $just: flex-start, $align: center);
-    font-size: 18px;
+    font-size: 14px;
     font-weight: weight(bold);
 
     &-semi-dark {
@@ -47,7 +47,7 @@
 
   &-secondary {
     @include flexy($dir: row, $just: flex-start, $align: center);
-    font-size: 14px;
+    font-size: 12px;
     font-weight: weight(normal);
 
     &-semi-dark {
@@ -66,7 +66,7 @@
 
   &-animation {
     text-transform: uppercase;
-    font-size: 36px;
+    font-size: 24px;
     font-weight: weight(ultra);
     color: $color-semi-light;
     position: relative;
@@ -104,18 +104,51 @@
   }
 
   &-right {
-    @include flexy($dir: row, $wrap: wrap, $just: flex-end, $align: center);
-    text-align: right;
+    @include flexy($dir: row, $wrap: wrap, $just: flex-start, $align: center);
+    text-align: left;
+  }
+
+  @include mq(md) {
+    &-ultra {
+      font-size: 36px;
+    }
+
+    &-animation {
+      font-size: 36px;
+    }
+
+    &-title {
+      font-size: 24px;
+    }
+
+    &-primary {
+      font-size: 18px;
+    }
+
+    &-secondary {
+      font-size: 14px;
+    }
+
+    &-left {
+      @include flexy($dir: row, $wrap: wrap, $just: flex-start, $align: center);
+      text-align: left;
+    }
+
+    &-right {
+      @include flexy($dir: row, $wrap: wrap, $just: flex-end, $align: center);
+      text-align: right;
+    }
   }
 }
 
 .line {
   &-separator {
-    width: 40%;
+    margin: 0.25rem auto 0.25rem 0;
+    width: 1.5rem;
     height: 2px;
     border: none;
     outline: none;
-    background-color: $color-primary;
+    background-color: $color-light;
   }
 }
 

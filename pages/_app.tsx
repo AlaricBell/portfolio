@@ -1,4 +1,5 @@
 import type { AppProps } from 'next/app'
+import Head from 'next/head'
 import { useEffect } from 'react'
 import '../styles/style.css'
 
@@ -15,6 +16,15 @@ function MyApp({ Component, pageProps }: AppProps) {
     });
   }, []);
 
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Hi! this is my personal portfolio page. If you like what you see feel free to contact me." />
+        <title>{process.env.NEXT_PUBLIC_APP_NAME}</title>
+      </Head>
+      <Component {...pageProps} />
+    </>
+  )
 }
 export default MyApp
