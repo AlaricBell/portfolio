@@ -1,6 +1,6 @@
 import {useState} from 'react'
-import TextSecondarySemiLight from '../text/TextSecondarySemiLight';
-import TextTitleLight from '../text/TextTitleLight';
+import TextSecondary from '../text/TextSecondary';
+import TextTitle from '../text/TextTitle';
 
 const Navbar: React.FC = props => {
   const [isVisible, setIsVisible] = useState(false)
@@ -10,8 +10,8 @@ const Navbar: React.FC = props => {
       <div className="navbar-initial">
       <a href="#">
         <div className="brand">
-          <TextTitleLight>Molnar David</TextTitleLight>
-          <TextSecondarySemiLight>Full-Stack Developer</TextSecondarySemiLight>
+          <TextTitle color="light">Molnar David</TextTitle>
+          <TextSecondary color="semi-light">Full-Stack Developer</TextSecondary>
         </div>
         </a>
         <div className="icon-container" onClick={() => setIsVisible(!isVisible)}>

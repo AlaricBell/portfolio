@@ -1,5 +1,5 @@
 import ButtonText from './button/ButtonText';
-import TextTitleLight from './text/TextTitleLight';
+import TextTitle from './text/TextTitle';
 import TextAnimationUltra from './text/TextAnimationUltra';
 import WordAnimation from './text/WordAnimation';
 import FormEmail from './form/FormEmail';
@@ -24,14 +24,14 @@ const Contact: React.FC<{isScrollingUp: boolean, isScrollingDown: boolean}> = ({
         <div className="row">
           <div className="col-6 card-contact" data-aos="fade-up">
             <div className="contact-item">
-              <TextTitleLight>Upwork</TextTitleLight>
+              <TextTitle color="light">Upwork</TextTitle>
               <ButtonText path="https://www.upwork.com/freelancers/~01214b59aff89c6e02">Contact me</ButtonText>
             </div>
           </div>
 
           <div className="col-6 card-contact" data-aos="fade-up">
             <div className="contact-item">
-              <TextTitleLight>LinkedIn</TextTitleLight>
+              <TextTitle color="light">LinkedIn</TextTitle>
               <ButtonText path="https://www.linkedin.com/in/d%C3%A1vid-moln%C3%A1r-a4b8b01a0/">Contact me</ButtonText>
             </div>
           </div>

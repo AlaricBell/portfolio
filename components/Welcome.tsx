@@ -1,8 +1,6 @@
-import ButtonPrimary from "./button/ButtonPrimary";
-import TextPrimarySemiLight from "./text/TextPrimarySemiLight";
-import TextSecondaryLight from "./text/TextSecondaryLight";
-import TextSecondarySemiLight from "./text/TextSecondarySemiLight";
-import TextTitleLight from "./text/TextTitleLight"
+import TextPrimary from "./text/TextPrimary";
+import TextSecondary from "./text/TextSecondary";
+import TextTitle from "./text/TextTitle"
 import ButtonWithText from "./button/ButtonWithText";
 import Parallax from 'react-rellax'
 
@@ -14,11 +12,11 @@ const Welcome: React.FC = props => {
           <div className="col-12 col-md-6">
           <Parallax speed={3}>
             <div className="card card-transparent">
-              <TextSecondarySemiLight>Molnar David</TextSecondarySemiLight>
-              <TextTitleLight>Full-stack web developer</TextTitleLight>
-              <TextPrimarySemiLight>With over 4 years of coding expreience, I always pay attention to detail while focusing on clean, scalable and maintainable code.</TextPrimarySemiLight>
+              <TextSecondary color="semi-light">Molnar David</TextSecondary>
+              <TextTitle color="light">Full-stack web developer</TextTitle>
+              <TextPrimary color="semi-light">With over 4 years of coding expreience, I always pay attention to detail while focusing on clean, scalable and maintainable code.</TextPrimary>
               <div className="card-mobile">
-                <TextSecondaryLight><a rel="noreferrer" className="btn-mobile" href="/files/david_molnar_cv.pdf" target="_blank">Resume</a> | <a rel="noreferrer" className="btn-mobile" href="https://github.com/AlaricBell" target="_blank">Github</a> | <a rel="noreferrer" className="btn-mobile" href="https://www.upwork.com/freelancers/~01214b59aff89c6e02" target="_blank">Upwork</a></TextSecondaryLight>
+                <TextSecondary color="light"><a rel="noreferrer" className="btn-mobile" href="/files/david_molnar_cv.pdf" target="_blank">Resume</a> | <a rel="noreferrer" className="btn-mobile" href="https://github.com/AlaricBell" target="_blank">Github</a> | <a rel="noreferrer" className="btn-mobile" href="https://www.upwork.com/freelancers/~01214b59aff89c6e02" target="_blank">Upwork</a></TextSecondary>
               </div>
             </div>
           </Parallax>

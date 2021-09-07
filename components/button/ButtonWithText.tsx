@@ -1,4 +1,4 @@
-import TextSecondarySemiLight from "../text/TextSecondarySemiLight";
+import TextSecondary from "../text/TextSecondary";
 import ButtonPrimary from "./ButtonPrimary";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,7 +9,7 @@ import {
 const ButtonWithText: React.FC<{path: string, textContent: string, buttonContent:string, download: boolean}> = ({path, textContent, buttonContent, download = false}) => {
   return (
     <div className="btn-group">
-      <TextSecondarySemiLight>{textContent}<FontAwesomeIcon icon={faChevronRight} style={{width: '14px', height: '14px'}}/></TextSecondarySemiLight>
+      <TextSecondary color="semi-light">{textContent}<FontAwesomeIcon icon={faChevronRight} style={{width: '14px', height: '14px'}}/></TextSecondary>
       <ButtonPrimary path={path} download={download}>{buttonContent}</ButtonPrimary>
     </div>
   )
